@@ -8,7 +8,7 @@ const config: Config = {
         brand: {
           dark: "#1a1a2e",
           darker: "#16213e",
-          accent: "#e94560",
+          accent: "#ff5000",
           light: "#f5f5f5",
         },
       },

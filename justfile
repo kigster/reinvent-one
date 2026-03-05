@@ -1,18 +1,19 @@
-
 set shell := ["bash", "-lc"]
 
-setup:
-    #!/usr/bin/env bash
+sync:
     volta install node
     volta install npm
     npm install
 
-run: setup
+run:
+    npm install
     npm run dev
 
-build: setup
-    npm run build
+# Run unit tests (uses kigster.repositories.json as fixture)
+test:
+    npm run test
 
-deploy: build
-    #!/usr/bin/env bash
-    rsync -avz --delete ./out/ kig@reinvent.one:/home/kig/workspace/reinvent-one/out
+# Convert kigster.repositories.json → component.repositories.json → TypeScript
+convert:
+    npm run convert
+

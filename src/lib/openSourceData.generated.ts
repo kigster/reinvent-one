@@ -1,0 +1,1623 @@
+/* eslint-disable */
+// Auto-generated from component.repositories.json. Do not edit.
+// Re-run `just convert` or `npm run convert-repos` to regenerate.
+
+import type { RepoProject } from "./openSourceTypes";
+
+export const openSourceProjects: RepoProject[] = [
+  {
+    "name": "cmake-project-template",
+    "repo": "kigster/cmake-project-template",
+    "desc": "This project is aimed at jump-starting a C/C++ project that can build libraries, binaries and have a working unit test suite. It uses CMake build system and is deliberately completely minimal.",
+    "stars": 945,
+    "url": "https://github.com/kigster/cmake-project-template",
+    "homepage": "",
+    "forks": 257,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "simple-feed",
+    "repo": "kigster/simple-feed",
+    "desc": "This gem implements a flexible time-ordered activity feeds commonly used within social networking applications. As events occur, they are pushed into the Feed and distributed to all users that need to see the event. Upon the user visiting their \"feed page\", a pre-populated ordered list of events is returned by the library.",
+    "stars": 335,
+    "url": "https://github.com/kigster/simple-feed",
+    "homepage": "",
+    "forks": 31,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "bashmatic",
+    "repo": "kigster/bashmatic",
+    "desc": "Optimized for humans, 900+ BASH DSL functions for all walks of life. Über Toölkit for über geeks and UNIX command line power users. Visit https://bashmatic.dev for more info..",
+    "stars": 172,
+    "url": "https://github.com/kigster/bashmatic",
+    "homepage": "https://bashmatic.dev",
+    "forks": 19,
+    "languages": [
+      "Shell"
+    ],
+    "topics": [
+      "ascii-graphics",
+      "automation",
+      "bash",
+      "functions",
+      "helpers",
+      "installation",
+      "library",
+      "scripting",
+      "ui",
+      "ui-components"
+    ],
+    "license": "mit",
+    "site": "https://bashmatic.dev"
+  },
+  {
+    "name": "sym",
+    "repo": "kigster/sym",
+    "desc": "Sym is a command line utility and a Ruby API that makes it trivial to encrypt and decrypt sensitive data. Unlike many other existing encryption tools, sym focuses on usability and streamlined interface (CLI), with the goal of making encryption easy and transparent. The result? There is no excuse for keeping your application secrets unencrypted :)",
+    "stars": 138,
+    "url": "https://github.com/kigster/sym",
+    "homepage": "",
+    "forks": 9,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "other"
+  },
+  {
+    "name": "laser-cutter",
+    "repo": "kigster/laser-cutter",
+    "desc": "Similar to boxmaker, this ruby gem generates PDFs that can be used as a basis for cutting boxes on a typical laser cutter. The intention is to create an extensible, well tested, and modern ruby framework for generating PDF templates used in laser cutting.",
+    "stars": 98,
+    "url": "https://github.com/kigster/laser-cutter",
+    "homepage": "",
+    "forks": 60,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "ventable",
+    "repo": "kigster/ventable",
+    "desc": "Event/Observable support for plain ruby with options for grouping observers and wrapping notifications in blocks of code, such as transaction handling.",
+    "stars": 62,
+    "url": "https://github.com/kigster/ventable",
+    "homepage": "",
+    "forks": 7,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "warp-dir",
+    "repo": "kigster/warp-dir",
+    "desc": "Warp Directory – a drop-in replacement (superset to be precise) of the nifty 'wd' ZSH module. This one is written in ruby, and works with any shell.",
+    "stars": 41,
+    "url": "https://github.com/kigster/warp-dir",
+    "homepage": "https://github.com/kigster/warp-dir",
+    "forks": 3,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "puma-daemon",
+    "repo": "kigster/puma-daemon",
+    "desc": "Puma (starting version 5) removed automatic demonization from the gem itself. This functionality was extracted to this gem, which supports Puma v5 and v6.",
+    "stars": 39,
+    "url": "https://github.com/kigster/puma-daemon",
+    "homepage": "",
+    "forks": 8,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "arli",
+    "repo": "kigster/arli",
+    "desc": "Arli is the command line tool, that's both — the Arduino Library manager that's decoupled from any IDE, as well a project generator based on \"arduino-cmake\". By coupling dependency management with CMake-based build system, Arli provides an easy way to package, share, and distribute complex Arduino projects.",
+    "stars": 30,
+    "url": "https://github.com/kigster/arli",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby",
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "dupervisor",
+    "repo": "kigster/dupervisor",
+    "desc": "This library converts config files between – YAML, JSON and Windows INI file format. For example, supervisord uses INI file format. Using the gem you can configure supervisord via a YAML file, and generate INI as needed. DuperVisor installs `dv`  CLI converter. Run `dv -h` for help.",
+    "stars": 9,
+    "url": "https://github.com/kigster/dupervisor",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "librgb",
+    "repo": "kigster/librgb",
+    "desc": "C/C++ Library for RGB color manipulation and effects. The intention is to make it possible to use the library for Arduino-based projects. Current status: pre-Alpha.",
+    "stars": 8,
+    "url": "https://github.com/kigster/librgb",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "delicious-library-3-cloud-sync",
+    "repo": "kigster/delicious-library-3-cloud-sync",
+    "desc": "A simple shell script so that the data files used by Delicious Library 3™ software for Mac made by Delicious Monster Software can be shared across multiple computers in your possession.",
+    "stars": 7,
+    "url": "https://github.com/kigster/delicious-library-3-cloud-sync",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Shell"
+    ],
+    "topics": []
+  },
+  {
+    "name": "dnsmadeeasy",
+    "repo": "kigster/dnsmadeeasy",
+    "desc": "A full-featured API client for managing DNS records hosted by DnsMadeEasy.com via their REST SDK v2. A powerful CLI command \"dme\" is installed for those script-centric. Ruby SDK is provided for those needing the integrate at deeper level.",
+    "stars": 6,
+    "url": "https://github.com/kigster/dnsmadeeasy",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "search-emlx-mailbox",
+    "repo": "kigster/search-emlx-mailbox",
+    "desc": "Rails 5.2-based application that uses Sunspot/Solr to index and import large number of emails either as individual files in \"*.elmx\" format, or by using an exported \"mbox\" format. Once imported, the app provides a simple and convenient search interface for finding all emails matching a given search string. Useful in depositions, legal proceedings, or just personal projects.",
+    "stars": 6,
+    "url": "https://github.com/kigster/search-emlx-mailbox",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "joyent-cloud-pricing",
+    "repo": "kigster/joyent-cloud-pricing",
+    "desc": "A collection of tools to help figure out Joyent cloud costs for an infrastructure of any size. Supports commit pricing discounts.",
+    "stars": 6,
+    "url": "https://github.com/kigster/joyent-cloud-pricing",
+    "homepage": "",
+    "forks": 3,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kigomoku-ios",
+    "repo": "kigster/kigomoku-ios",
+    "desc": "Simple Gomoku (Five In A Row) game for iPhone",
+    "stars": 6,
+    "url": "https://github.com/kigster/kigomoku-ios",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Objective-C"
+    ],
+    "topics": []
+  },
+  {
+    "name": "attr_memoized",
+    "repo": "kigster/attr_memoized",
+    "desc": "Memoize attributes in a thread-safe way.  This ruby gem adds a `#attr_memoized` class method, that provides a lazy-loading mechanism for initializing \"heavy\" attributes, but in a thread-safe way. Instances thus created can be shared among threads.",
+    "stars": 6,
+    "url": "https://github.com/kigster/attr_memoized",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "RotaryEncoderWithButton",
+    "repo": "kigster/RotaryEncoderWithButton",
+    "desc": "Easily read rotary encoder buttons that also incorporate a push button, like Adafruit Rotary Encoder.",
+    "stars": 5,
+    "url": "https://github.com/kigster/RotaryEncoderWithButton",
+    "homepage": "",
+    "forks": 2,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "sidekiq-cluster",
+    "repo": "kigster/sidekiq-cluster",
+    "desc": "Sidekiq cluster is a simple CLI wrapper around Sidekiq that allows running multiple Sidekiq processes as a single pool of workers.",
+    "stars": 5,
+    "url": "https://github.com/kigster/sidekiq-cluster",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "makeabox",
+    "repo": "kigster/makeabox",
+    "desc": "MakeABox – use this app with a laser cutter to create a box with notches that connect all sides together.",
+    "stars": 5,
+    "url": "https://github.com/kigster/makeabox",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "register",
+    "repo": "kigster/register",
+    "desc": "Registry pattern for wrapping application globals in a module-level auto-generated accessors",
+    "stars": 4,
+    "url": "https://github.com/kigster/register",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "molder",
+    "repo": "kigster/molder",
+    "desc": "Molder is a command line tool for generating and running (in parallel) a set of related but similar commands. A key use-case is auto-generation of the host provisioning commands for an arbitrary cloud environment. The gem is not constrained to any particular cloud tool or even a command, and can be used to generate a consistent set of commands based on several customizable dimensions.",
+    "stars": 4,
+    "url": "https://github.com/kigster/molder",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "datadog-statsd-schema",
+    "repo": "kigster/datadog-statsd-schema",
+    "desc": "An intelligent adapter for dogstatsd-ruby gem that supports defining a validation schema for custom metrics, their tags, amd tag values. It prevents arbitrary tag names, and therefore also takes under control the explosion of custom metrics. This keeps the costs down while ensuring that the metrics and tags follow a predefined design.",
+    "stars": 4,
+    "url": "https://github.com/kigster/datadog-statsd-schema",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "arduino-library",
+    "repo": "kigster/arduino-library",
+    "desc": "This gem encapsulates many concepts related to how Arduino Libraries are indexed, how their metadata is validated, or .properties file generated. It supports searching the Arduino library database for any terms. This gem is used by Arli — Arduino Installer CLI toolkit.",
+    "stars": 4,
+    "url": "https://github.com/kigster/arduino-library",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "auto-dimming-clock",
+    "repo": "kigster/auto-dimming-clock",
+    "desc": "Digital wall clock, or a bed-side clock, or whatever type of clock you like, equipped with a rotary encoder knob, a photo resistor able to aid in adjusting brightness as it changes throughout the day. The clock can be equipped with an optional strip of neo pixels – for some extra color. Works with Arduino Uno, Nano, Mini Pro, as well as Teensy.",
+    "stars": 4,
+    "url": "https://github.com/kigster/auto-dimming-clock",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "beatify",
+    "repo": "kigster/beatify",
+    "desc": "A wrapper project around \"beet\" open source music organizer, suitable for DJs with large music folders.",
+    "stars": 4,
+    "url": "https://github.com/kigster/beatify",
+    "homepage": "",
+    "forks": 2,
+    "languages": [
+      "Shell"
+    ],
+    "topics": [],
+    "license": "other"
+  },
+  {
+    "name": "pause",
+    "repo": "kigster/pause",
+    "desc": "Fast, flexible, and easy to use rate limiter or throttler for multi-process ruby applications backed by Redis.",
+    "stars": 3,
+    "url": "https://github.com/kigster/pause",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "turnstile-rb",
+    "repo": "kigster/turnstile-rb",
+    "desc": "Turnstile is a ruby gem for tracking in near-real time concurrent live users on the site without introducing additional latency into the request.",
+    "stars": 3,
+    "url": "https://github.com/kigster/turnstile-rb",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "back-seat-driver",
+    "repo": "kigster/back-seat-driver",
+    "desc": "Autonomous Arduino Robot control library in C++. Easily drive various kinds of robots without blocking or sleeping. Supports servo-based bots and DC motor based using Adafruit Motor Shield.",
+    "stars": 3,
+    "url": "https://github.com/kigster/back-seat-driver",
+    "homepage": "",
+    "forks": 3,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kigame-cpp",
+    "repo": "kigster/kigame-cpp",
+    "desc": "A set of generic C++ interfaces and classes to aid with modeling basic 2-player board games.",
+    "stars": 3,
+    "url": "https://github.com/kigster/kigame-cpp",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kigaboom",
+    "repo": "kigster/kigaboom",
+    "desc": "Teensy + Audio Shield + TFT+ Infrared / Rotary Knobs = fully customizable audio digital signal processing station, with spectrum analyzer, peak meter, EQ and many more functions available via simple controls.",
+    "stars": 3,
+    "url": "https://github.com/kigster/kigaboom",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "helpful-tools",
+    "repo": "kigster/helpful-tools",
+    "desc": "Personal collection of scripts, snippets, and more, typically written in ruby.",
+    "stars": 3,
+    "url": "https://github.com/kigster/helpful-tools",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "githuh",
+    "repo": "kigster/githuh",
+    "desc": "Github API command line client for fetching repos, looking up users, etc.",
+    "stars": 3,
+    "url": "https://github.com/kigster/githuh",
+    "homepage": "",
+    "forks": 2,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "cookbook-set-hostname",
+    "repo": "kigster/cookbook-set-hostname",
+    "desc": "Why is not part of Chef? I have no idea. But here is how you can set your hostname correctly, and with FQDN. The hostname is set based on the specified domain name. Supports SmartOS, Ubuntu and CentOS.",
+    "stars": 3,
+    "url": "https://github.com/kigster/cookbook-set-hostname",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby",
+      "Chef"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "cookbook-auto-updater",
+    "repo": "kigster/cookbook-auto-updater",
+    "desc": "This Cookbook performs several operations on a newly provisioned Ubuntu machines to prepare them for server-side operation. It includes setting the timezone, and performing smart unattended update of all system packages and kernels, possibly requiring reboot.",
+    "stars": 2,
+    "url": "https://github.com/kigster/cookbook-auto-updater",
+    "homepage": "",
+    "forks": 3,
+    "languages": [
+      "Ruby",
+      "Chef"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "box-with-lines",
+    "repo": "kigster/box-with-lines",
+    "desc": "A CLI tool configured as a Ruby Gem. ASCII Terminal Box and Lines under any angle. Requires computing angular slope and y coordinates.",
+    "stars": 2,
+    "url": "https://github.com/kigster/box-with-lines",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "host_status",
+    "repo": "kigster/host_status",
+    "desc": "Generic facade that aggregates metrics for a given host running a particular application using pluggable methods including third-party APIs.",
+    "stars": 2,
+    "url": "https://github.com/kigster/host_status",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "cookbook-logrotate-s3",
+    "repo": "kigster/cookbook-logrotate-s3",
+    "desc": "Rotate logs to S3 using logrotate and s3cmd",
+    "stars": 2,
+    "url": "https://github.com/kigster/cookbook-logrotate-s3",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby",
+      "Chef"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "gomoku-ansi-c",
+    "repo": "kigster/gomoku-ansi-c",
+    "desc": "This repo contains both the ASCII Terminal implementation of the Gomoku game, with MiniMax algorithm & Alpha/Beta pruning. It only requires arrow keys to choose and Enter to make a move. Separately there is also a networked HTTPD version that powers the ReactJS web app via a cluster behind a reverse proxy.",
+    "stars": 2,
+    "url": "https://github.com/kigster/gomoku-ansi-c",
+    "homepage": "https://app.gomoku.games",
+    "forks": 1,
+    "languages": [
+      "C"
+    ],
+    "topics": [
+      "gomoku",
+      "gomoku-game",
+      "minimax-algorithm",
+      "minimax-alpha-beta-pruning"
+    ],
+    "license": "mit",
+    "site": "https://app.gomoku.games"
+  },
+  {
+    "name": "game-simon-says",
+    "repo": "kigster/game-simon-says",
+    "desc": "C/C++ core of this simple pattern repeating game.",
+    "stars": 2,
+    "url": "https://github.com/kigster/game-simon-says",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "flix-capacitor",
+    "repo": "kigster/flix-capacitor",
+    "desc": "A little flux/flix capacitor box based on Teensy 3.1 for showing pictures, clock, playing DJ sets, and starting a small rave in a recovery room.",
+    "stars": 2,
+    "url": "https://github.com/kigster/flix-capacitor",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Arduino"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "mms-mime",
+    "repo": "kigster/mms-mime",
+    "desc": "Ruby parser for MM7-wrapped MMS/MIME messages",
+    "stars": 2,
+    "url": "https://github.com/kigster/mms-mime",
+    "homepage": "",
+    "forks": 2,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "cookbook-pgbouncer-service",
+    "repo": "kigster/cookbook-pgbouncer-service",
+    "desc": "Installs pgBouncer from either sources or packages, configures the connections, and sets up a service.",
+    "stars": 2,
+    "url": "https://github.com/kigster/cookbook-pgbouncer-service",
+    "homepage": "",
+    "forks": 3,
+    "languages": [
+      "Ruby",
+      "Chef"
+    ],
+    "topics": []
+  },
+  {
+    "name": "obstacle-avoiding-robot",
+    "repo": "kigster/obstacle-avoiding-robot",
+    "desc": "Arduino-based project that drives on 4 DC motors and avoids things in front.",
+    "stars": 2,
+    "url": "https://github.com/kigster/obstacle-avoiding-robot",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake",
+      "C++",
+      "Arduino"
+    ],
+    "topics": []
+  },
+  {
+    "name": "treename",
+    "repo": "kigster/treename",
+    "desc": "Rename all files in multi-level folder tree based on custom logic, with optional custom callbacks. Use it to process batches of files to convert them eg. from WAV to MP3 or vice versa, while renaming them along the way.",
+    "stars": 2,
+    "url": "https://github.com/kigster/treename",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "performance-compare",
+    "repo": "kigster/performance-compare",
+    "desc": "A simple gem that can be used to compare algorithm implementations in Ruby using a single thread, a thread pool, or a process pool.",
+    "stars": 2,
+    "url": "https://github.com/kigster/performance-compare",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "thread_unsafe",
+    "repo": "kigster/thread_unsafe",
+    "desc": "Thread safety experiments in Ruby language.",
+    "stars": 2,
+    "url": "https://github.com/kigster/thread_unsafe",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "weather-pod",
+    "repo": "kigster/weather-pod",
+    "desc": "4-line LCD Screen shows temperature, humidity, barometric pressure and time. Project build using arduino-cmake, dependencies maintained by Arli.",
+    "stars": 2,
+    "url": "https://github.com/kigster/weather-pod",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake",
+      "C++",
+      "Arduino"
+    ],
+    "topics": []
+  },
+  {
+    "name": "vscode-insider-settings",
+    "repo": "kigster/vscode-insider-settings",
+    "desc": "A set of simple makefile commands to export/import/swap settings for VSCode and VSCode Insiders",
+    "stars": 2,
+    "url": "https://github.com/kigster/vscode-insider-settings",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Makefile"
+    ],
+    "topics": []
+  },
+  {
+    "name": "ruby-exercises",
+    "repo": "kigster/ruby-exercises",
+    "desc": "Ruby implementations of exercises I came across and thought they were fun.",
+    "stars": 2,
+    "url": "https://github.com/kigster/ruby-exercises",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "saves-cli",
+    "repo": "kigster/saves-cli",
+    "desc": "Saves Service CLI Client for a proprietary horizontally sharded storage of product saves.",
+    "stars": 2,
+    "url": "https://github.com/kigster/saves-cli",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "gomoku-cpp-client-server",
+    "repo": "kigster/gomoku-cpp-client-server",
+    "desc": "Client/Server Gomoku implementation based on the ANSI C version",
+    "stars": 1,
+    "url": "https://github.com/kigster/gomoku-cpp-client-server",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++",
+      "C"
+    ],
+    "topics": [
+      "client-server",
+      "gomoku",
+      "http",
+      "json",
+      "websockets"
+    ],
+    "license": "mit"
+  },
+  {
+    "name": "arli-cmake",
+    "repo": "kigster/arli-cmake",
+    "desc": "Some additional helpers for arduino-cmake project, as well as the helpers to connect Arli library Manager.",
+    "stars": 1,
+    "url": "https://github.com/kigster/arli-cmake",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake",
+      "C++",
+      "Arduino"
+    ],
+    "topics": []
+  },
+  {
+    "name": "AsciiDuino",
+    "repo": "kigster/AsciiDuino",
+    "desc": "Library that makes displaying shapes/frames on RainbowDuino LED Matrix easy using ASCII pictures as source input",
+    "stars": 1,
+    "url": "https://github.com/kigster/AsciiDuino",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "gomoku",
+    "repo": "kigster/gomoku",
+    "desc": "Gomoku — Play with AI based on Alpha/Beta pruning. Client-Server implementation with Rails 8 providing user authentication and persistence, and ReactJS providing the UI and the game AI.",
+    "stars": 1,
+    "url": "https://github.com/kigster/gomoku",
+    "homepage": "https://gomoku.games",
+    "forks": 0,
+    "languages": [
+      "TypeScript",
+      "Ruby"
+    ],
+    "topics": [
+      "five-in-a-row",
+      "game",
+      "gomoku",
+      "online-game",
+      "tic-tac-toe"
+    ],
+    "site": "https://gomoku.games"
+  },
+  {
+    "name": "ventable-statsd",
+    "repo": "kigster/ventable-statsd",
+    "desc": "Integrate your Ventable events with Statsd in order to track some or all of the events that occur using a fast light-weight UDP protocol.",
+    "stars": 1,
+    "url": "https://github.com/kigster/ventable-statsd",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "rules_ruby_lambda",
+    "repo": "kigster/rules_ruby_lambda",
+    "desc": "Bazel rules for packaging and uploading AWS Lambdas",
+    "stars": 1,
+    "url": "https://github.com/kigster/rules_ruby_lambda",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": [],
+    "license": "apache-2.0"
+  },
+  {
+    "name": "flowengine",
+    "repo": "kigster/flowengine",
+    "desc": "FlowEngine is a Ruby Gem for flexible workflow building.",
+    "stars": 1,
+    "url": "https://github.com/kigster/flowengine",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "uri-io",
+    "repo": "kigster/uri-io",
+    "desc": "Provides IO semantics for various URI schemes",
+    "stars": 1,
+    "url": "https://github.com/kigster/uri-io",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "drb-cache",
+    "repo": "kigster/drb-cache",
+    "desc": "DRb::Cache is a ruby gem that offers a shared multi-process cache by transparently managing a DRb server process on the background.",
+    "stars": 1,
+    "url": "https://github.com/kigster/drb-cache",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "solr-sunspot-cookbook",
+    "repo": "kigster/solr-sunspot-cookbook",
+    "desc": "Fully automated installation, configuration and service definition for Solr Search engine with support for single master many replicas, and specifically configured to work with Sunspot Ruby Gem.",
+    "stars": 1,
+    "url": "https://github.com/kigster/solr-sunspot-cookbook",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "HTML",
+      "Ruby",
+      "Chef"
+    ],
+    "topics": []
+  },
+  {
+    "name": "sparkfun7SD",
+    "repo": "kigster/sparkfun7SD",
+    "desc": "Set of libraries for using Sparkfun seven-segment displays (4 digit), while using different means of communications, implemented as sub-libraries. Based on tutorials @ https://learn.sparkfun.com/tutorials/using-the-serial-7-segment-display",
+    "stars": 1,
+    "url": "https://github.com/kigster/sparkfun7SD",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "sprout-pyenv",
+    "repo": "kigster/sprout-pyenv",
+    "desc": "Sprout-wrap compatible cookbook to install pyenv using Brew, and then any version of Python using soloist.",
+    "stars": 1,
+    "url": "https://github.com/kigster/sprout-pyenv",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby",
+      "Python"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "super_uri",
+    "repo": "kigster/super_uri",
+    "desc": "Extension to the OpenURI module that understands many additional types of URI resources, and is able to open and read them. Included are: file://, env://, osxkeychain://, redis://, memcached:// schemes.",
+    "stars": 1,
+    "url": "https://github.com/kigster/super_uri",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "bazel-in-pictures",
+    "repo": "kigster/bazel-in-pictures",
+    "desc": "Various UML-like diagrams explaining Bazel API for those creating new rules",
+    "stars": 1,
+    "url": "https://github.com/kigster/bazel-in-pictures",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": []
+  },
+  {
+    "name": "sym-crypt",
+    "repo": "kigster/sym-crypt",
+    "desc": "This library provides a simple interface allowing access to the symmetric encryption functionality provided by the OpenSSL library. It supports private key generation, encryption/decryption with the key, as well as encryption/decryption with an arbitrary user-defined password.",
+    "stars": 1,
+    "url": "https://github.com/kigster/sym-crypt",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "cookbook-dnsmadeeasy",
+    "repo": "kigster/cookbook-dnsmadeeasy",
+    "desc": "DNS record management cookbook for automatically registering nodes with DnsMadeEasy provider.",
+    "stars": 1,
+    "url": "https://github.com/kigster/cookbook-dnsmadeeasy",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Ruby",
+      "Chef"
+    ],
+    "topics": [],
+    "license": "other"
+  },
+  {
+    "name": "cmake-ccspec-template",
+    "repo": "kigster/cmake-ccspec-template",
+    "desc": "CMake C++ project template that uses ccspec for unit testing, instead of Google Test library.",
+    "stars": 1,
+    "url": "https://github.com/kigster/cmake-ccspec-template",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": []
+  },
+  {
+    "name": "algorithmic-exercises",
+    "repo": "kigster/algorithmic-exercises",
+    "desc": "Various questions, problems, exercises solved in ruby and C++, and provided with sometimes multiple solutions, and Big O evaluation.",
+    "stars": 1,
+    "url": "https://github.com/kigster/algorithmic-exercises",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "other"
+  },
+  {
+    "name": "arcade-domain-name-toolkit",
+    "repo": "kigster/arcade-domain-name-toolkit",
+    "desc": "Arcade.dev Domain Name Toolkit that offers checks for SSL certificate and domain expiration checking.",
+    "stars": 1,
+    "url": "https://github.com/kigster/arcade-domain-name-toolkit",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Python"
+    ],
+    "topics": []
+  },
+  {
+    "name": "playgine",
+    "repo": "kigster/playgine",
+    "desc": "Gaming backend engine written in Rails 6, TypeScript, PostgreSQL",
+    "stars": 1,
+    "url": "https://github.com/kigster/playgine",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other",
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "arduino-workspace",
+    "repo": "kigster/arduino-workspace",
+    "desc": "",
+    "stars": 1,
+    "url": "https://github.com/kigster/arduino-workspace",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Shell"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kiguino",
+    "repo": "kigster/kiguino",
+    "desc": "Collection of Arduino libraries and wrappers, written and used in various live projects.  Most of the libraries hide some complexity and encapsulate a consistent approach to the *thing*, be that measuring a sensor, working with a rotary knob, etc.",
+    "stars": 1,
+    "url": "https://github.com/kigster/kiguino",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "timed-messages",
+    "repo": "kigster/timed-messages",
+    "desc": "Schedule defined as starting times and durations, good for integrating into embedded LED systems that are supposed to show a given artist at a given time. Arduino-free library with automated tests based on ccspec (C++17 required)",
+    "stars": 1,
+    "url": "https://github.com/kigster/timed-messages",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": []
+  },
+  {
+    "name": "gomoku-cpp23",
+    "repo": "kigster/gomoku-cpp23",
+    "desc": "A more advanced version of the ANSI C version written in C++23, and supports many additional features.",
+    "stars": 1,
+    "url": "https://github.com/kigster/gomoku-cpp23",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "require_dir",
+    "repo": "kigster/require_dir",
+    "desc": "Easily and non-intrusively require files from sub-folders in ruby. Unlike require_all, this gem is meant to be included and does not break or affect load path.",
+    "stars": 1,
+    "url": "https://github.com/kigster/require_dir",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "readonly",
+    "repo": "kigster/readonly",
+    "desc": "This gem offers a proxy class that can be used to create a read-only wrappers around any other class, by declaring which methods can be delegated to the wrapped class.",
+    "stars": 1,
+    "url": "https://github.com/kigster/readonly",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "wallclock-arduino",
+    "repo": "kigster/wallclock-arduino",
+    "desc": "CMake-based project for a fancy digital Wall Clock with Neo Pixels, temperature, and other goodies.",
+    "stars": 1,
+    "url": "https://github.com/kigster/wallclock-arduino",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake",
+      "C++",
+      "Arduino"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "pythagoras",
+    "repo": "kigster/pythagoras",
+    "desc": "Super simple C++ calculator that computes either a hypothenuse from the equal cathet, or vice versa.",
+    "stars": 1,
+    "url": "https://github.com/kigster/pythagoras",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "bashmatic.dev",
+    "repo": "kigster/bashmatic.dev",
+    "desc": "The web site for Bashmatic",
+    "stars": 0,
+    "url": "https://github.com/kigster/bashmatic.dev",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": []
+  },
+  {
+    "name": "BattleShift",
+    "repo": "kigster/BattleShift",
+    "desc": "",
+    "stars": 0,
+    "url": "https://github.com/kigster/BattleShift",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake"
+    ],
+    "topics": []
+  },
+  {
+    "name": "warpcd",
+    "repo": "kigster/warpcd",
+    "desc": "C++ Implementation of 'wd' (Warp Dir) zsh module and a corresponding ruby gem. Advanced syntax allowing parallel command execution across multiple directories / projects.",
+    "stars": 0,
+    "url": "https://github.com/kigster/warpcd",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other",
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "arduino-cmake-oversized-image",
+    "repo": "kigster/arduino-cmake-oversized-image",
+    "desc": "This project, based on the Arduino-CMake template, was created to demonstrate the difference in binary image size produced by the Arduino IDE, versus Arduino-CMake build system. July 2018 Update! ★ It has since been resolved. See https://github.com/arduino-cmake/arduino-cmake/issues/67",
+    "stars": 0,
+    "url": "https://github.com/kigster/arduino-cmake-oversized-image",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": []
+  },
+  {
+    "name": "aurora-arli",
+    "repo": "kigster/aurora-arli",
+    "desc": "Aurora from PixelMatrix",
+    "stars": 0,
+    "url": "https://github.com/kigster/aurora-arli",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": []
+  },
+  {
+    "name": "watcher-runner",
+    "repo": "kigster/watcher-runner",
+    "desc": "Watch for changes in a folder and execute a command every so often when changes are detected.",
+    "stars": 0,
+    "url": "https://github.com/kigster/watcher-runner",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "bazel-vscode",
+    "repo": "kigster/bazel-vscode",
+    "desc": "",
+    "stars": 0,
+    "url": "https://github.com/kigster/bazel-vscode",
+    "homepage": "",
+    "forks": 1,
+    "languages": [
+      "Shell"
+    ],
+    "topics": []
+  },
+  {
+    "name": "trinket-wall-e",
+    "repo": "kigster/trinket-wall-e",
+    "desc": "Little Wall-E",
+    "stars": 0,
+    "url": "https://github.com/kigster/trinket-wall-e",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Shell"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "tty-ui",
+    "repo": "kigster/tty-ui",
+    "desc": "A collection of primitives that one might want to use while building TTY-based applications based on TTY Toolkit by Piotr Murach.",
+    "stars": 0,
+    "url": "https://github.com/kigster/tty-ui",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "omnipix",
+    "repo": "kigster/omnipix",
+    "desc": "Various animations on 32x32 LED matrix powered by Teensy 3.1, SmartMatrix, and a custom enclosure.",
+    "stars": 0,
+    "url": "https://github.com/kigster/omnipix",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "neon-dj",
+    "repo": "kigster/neon-dj",
+    "desc": "A fork of pixelmatrix/aurora that's too heaviliy modified.",
+    "stars": 0,
+    "url": "https://github.com/kigster/neon-dj",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C++"
+    ],
+    "topics": [],
+    "license": "other"
+  },
+  {
+    "name": "neo-ring",
+    "repo": "kigster/neo-ring",
+    "desc": "Ring of NeoPixels based on the Adafruit_NeoPixel library and an example.",
+    "stars": 0,
+    "url": "https://github.com/kigster/neo-ring",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CMake"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "minecraft",
+    "repo": "kigster/minecraft",
+    "desc": "A simple interview problem with a solution",
+    "stars": 0,
+    "url": "https://github.com/kigster/minecraft",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "makara-try-master",
+    "repo": "kigster/makara-try-master",
+    "desc": "A plugin for Makara users to provide semi-automatic wrapping around the replica selects, to retry then on master. This is offered as an alternative to using stickiness to keep stick each session to the master whenever an update occurs.",
+    "stars": 0,
+    "url": "https://github.com/kigster/makara-try-master",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "prezo-revealjs.terragrunt",
+    "repo": "kigster/prezo-revealjs.terragrunt",
+    "desc": "This is a reveal.js presentation that uses prism.js for syntax highlighting and explains why TerraGrunt wrapper around Terraform can solve certaing types of problems that occur in large Terraform Projects.",
+    "stars": 0,
+    "url": "https://github.com/kigster/prezo-revealjs.terragrunt",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "CSS"
+    ],
+    "topics": []
+  },
+  {
+    "name": "pyodine-example",
+    "repo": "kigster/pyodine-example",
+    "desc": "Working example of using Pyodine library to evaluate Python in the Browser",
+    "stars": 0,
+    "url": "https://github.com/kigster/pyodine-example",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "HTML",
+      "Python"
+    ],
+    "topics": []
+  },
+  {
+    "name": "knife-sharpener",
+    "repo": "kigster/knife-sharpener",
+    "desc": "Help with provisioning using knife",
+    "stars": 0,
+    "url": "https://github.com/kigster/knife-sharpener",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kinesis-rb",
+    "repo": "kigster/kinesis-rb",
+    "desc": "AWS Kinesis Stream processing client application",
+    "stars": 0,
+    "url": "https://github.com/kigster/kinesis-rb",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "kigster",
+    "repo": "kigster/kigster",
+    "desc": "",
+    "stars": 0,
+    "url": "https://github.com/kigster/kigster",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "quikchat",
+    "repo": "kigster/quikchat",
+    "desc": "Ruby client library for QuikChat server.",
+    "stars": 0,
+    "url": "https://github.com/kigster/quikchat",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "quikchat-server",
+    "repo": "kigster/quikchat-server",
+    "desc": "A performant HTTP/JSON chat server that supports persistent multi-user chats, backed by PostgreSQL backend.",
+    "stars": 0,
+    "url": "https://github.com/kigster/quikchat-server",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "reinvent-one",
+    "repo": "kigster/reinvent-one",
+    "desc": "ReactJS/Next/TailwindCSS",
+    "stars": 0,
+    "url": "https://github.com/kigster/reinvent-one",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "TypeScript"
+    ],
+    "topics": []
+  },
+  {
+    "name": "gomoku.py",
+    "repo": "kigster/gomoku.py",
+    "desc": "Python version of the Gomoku game.",
+    "stars": 0,
+    "url": "https://github.com/kigster/gomoku.py",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Python"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "gomoku-cpp",
+    "repo": "kigster/gomoku-cpp",
+    "desc": "C++ version of the gaming engine for a popular game Gomoku",
+    "stars": 0,
+    "url": "https://github.com/kigster/gomoku-cpp",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "C"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "ruby-benchmarks",
+    "repo": "kigster/ruby-benchmarks",
+    "desc": "Collection of various ruby scripts for measuring and comparing performance.",
+    "stars": 0,
+    "url": "https://github.com/kigster/ruby-benchmarks",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "go-learning",
+    "repo": "kigster/go-learning",
+    "desc": "Various examples used in learning Go",
+    "stars": 0,
+    "url": "https://github.com/kigster/go-learning",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Go"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "flowengine-cli",
+    "repo": "kigster/flowengine-cli",
+    "desc": "CLI interface to the flowengine",
+    "stars": 0,
+    "url": "https://github.com/kigster/flowengine-cli",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "sass-embedded-gemfile",
+    "repo": "kigster/sass-embedded-gemfile",
+    "desc": "",
+    "stars": 0,
+    "url": "https://github.com/kigster/sass-embedded-gemfile",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Dockerfile"
+    ],
+    "topics": []
+  },
+  {
+    "name": "fibonacci-by-language",
+    "repo": "kigster/fibonacci-by-language",
+    "desc": "Various implementations of Fibonacci in C/C++/Go/Rust/Pythong/Ruby/Assembler",
+    "stars": 0,
+    "url": "https://github.com/kigster/fibonacci-by-language",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "ec2-provisioner",
+    "repo": "kigster/ec2-provisioner",
+    "desc": "Generate commands for knife ec2 Chef plugin based on a YAML template",
+    "stars": 0,
+    "url": "https://github.com/kigster/ec2-provisioner",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "devops-docs",
+    "repo": "kigster/devops-docs",
+    "desc": "DevOps documentation",
+    "stars": 0,
+    "url": "https://github.com/kigster/devops-docs",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": []
+  },
+  {
+    "name": "dev-ai-setup",
+    "repo": "kigster/dev-ai-setup",
+    "desc": "Configure and download various AI coding companions",
+    "stars": 0,
+    "url": "https://github.com/kigster/dev-ai-setup",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Other"
+    ],
+    "topics": [],
+    "license": "mit"
+  },
+  {
+    "name": "sym-blank",
+    "repo": "kigster/sym-blank",
+    "desc": "",
+    "stars": 0,
+    "url": "https://github.com/kigster/sym-blank",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "Ruby"
+    ],
+    "topics": []
+  },
+  {
+    "name": "taxagent-us",
+    "repo": "kigster/taxagent-us",
+    "desc": "React/NestJS site for the https://taxagent.us site",
+    "stars": 0,
+    "url": "https://github.com/kigster/taxagent-us",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "TypeScript"
+    ],
+    "topics": []
+  },
+  {
+    "name": "bluebear.band",
+    "repo": "kigster/bluebear.band",
+    "desc": "Public site for blue bear bands.",
+    "stars": 0,
+    "url": "https://github.com/kigster/bluebear.band",
+    "homepage": "",
+    "forks": 0,
+    "languages": [
+      "HTML"
+    ],
+    "topics": []
+  }
+];

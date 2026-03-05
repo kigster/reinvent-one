@@ -4,7 +4,7 @@ export const team = [
     position: "CEO & Founder",
     image: "/images/team/konstantin.jpg",
     linkedIn: "https://linkedin.com/in/kigster",
-    twitter: "https://twitter.com/kaborka",
+    twitter: "https://twitter.com/kig",
     github: "https://github.com/kigster",
     bio: "Konstantin is a seasoned engineering leader and founder of ReinventONE. With decades of experience across distributed systems, scalability, and open source, he now focuses on applied AI and AI-first engineering — helping teams integrate large language models, vector databases, and intelligent automation into production systems.",
     stats: {

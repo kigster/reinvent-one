@@ -12,13 +12,18 @@ export default function Hero() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const prefersReducedMotion =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
     let w = (canvas.width = window.innerWidth);
     let h = (canvas.height = window.innerHeight);
 
     const minDist = 10;
     const maxDist = 30;
     const initialWidth = 10;
-    const maxLines = 100;
+    const maxLines = 60;
     const initialLines = 4;
     const speed = 5;
     let lines: Line[] = [];

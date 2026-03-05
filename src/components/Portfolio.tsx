@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { clients, type Client } from "@/data/clients";
 
-function ClientCard({
+const ClientCard = memo(function ClientCard({
   client,
-  onClick,
+  onSelect,
 }: {
   client: Client;
-  onClick: () => void;
+  onSelect: (client: Client) => void;
 }) {
   return (
     <button
-      onClick={onClick}
+      onClick={() => onSelect(client)}
       className="group relative overflow-hidden rounded-lg aspect-[4/3] w-full text-left"
     >
       <img
@@ -29,7 +29,7 @@ function ClientCard({
       </div>
     </button>
   );
-}
+});
 
 function ClientModal({
   client,
@@ -87,6 +87,8 @@ function ClientModal({
 
 export default function Portfolio() {
   const [selected, setSelected] = useState<Client | null>(null);
+  const handleSelect = useCallback((client: Client) => setSelected(client), []);
+  const handleClose = useCallback(() => setSelected(null), []);
 
   return (
     <section id="portfolio" className="relative py-24 bg-white text-gray-900">
@@ -106,14 +108,14 @@ export default function Portfolio() {
             <ClientCard
               key={client.short}
               client={client}
-              onClick={() => setSelected(client)}
+              onSelect={handleSelect}
             />
           ))}
         </div>
       </div>
 
       {selected && (
-        <ClientModal client={selected} onClose={() => setSelected(null)} />
+        <ClientModal client={selected} onClose={handleClose} />
       )}
     </section>
   );

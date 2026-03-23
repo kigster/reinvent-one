@@ -1,3 +1,5 @@
+[![Test](https://github.com/kigster/reinvent-one/actions/workflows/test.yml/badge.svg)](https://github.com/kigster/reinvent-one/actions/workflows/test.yml)
+
 # ReinventONE 2.0
 
 This site is made using Claude AI. It runs on ReactJS/Next and TailwindCSS.

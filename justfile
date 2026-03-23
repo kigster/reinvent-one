@@ -25,9 +25,15 @@ clean:
     rm -rfv out
 
 deploy:
-    @echo "Removing previous build locally.."
-    @rm -rf out
-    @npm install
-    @npm run build
-    @version="$(grep version | pakage.json | awk '{print $2}')"
-    @echo $version
+    @echo -e "Remote update:" 
+    @ssh -tt kig@kig.re /bin/bash -c \
+        "cd /home/kig/workspace/reinvent-one; mv out; out.pre-deploy; ln -nfs out.pre-deploy out"
+    @ssh -tt kig@kig.re /bin/bash -c \
+        "cd /home/kig/workspace/reinvent-one; git pull ; npm install; rm -f out; npm build"
+
+tag:
+    #!/usr/bin/env bash
+    version="$(cat package.json | grep version | awk '{print $2}' | tr -d '",')"
+    echo $version
+    git tag -f "v${version}"
+    git push --tags

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, memo } from "react";
 import { talks, type Talk } from "@/data/talks";
+import { trackClick } from "./SectionContext";
 import PdfViewer from "./PdfViewer";
 
 function formatSize(bytes: number): string {
@@ -52,8 +53,14 @@ const TalkCard = memo(function TalkCard({
 
 export default function PublicSpeaking() {
   const [selectedTalk, setSelectedTalk] = useState<Talk | null>(null);
-  const handleSelect = useCallback((talk: Talk) => setSelectedTalk(talk), []);
-  const handleClose = useCallback(() => setSelectedTalk(null), []);
+  const handleSelect = useCallback((talk: Talk) => {
+    trackClick("talks", talk.title, "open");
+    setSelectedTalk(talk);
+  }, []);
+  const handleClose = useCallback(() => {
+    if (selectedTalk) trackClick("talks", selectedTalk.title, "close");
+    setSelectedTalk(null);
+  }, [selectedTalk]);
 
   return (
     <section id="speaking" className="relative py-24 bg-gray-200 text-gray-900">

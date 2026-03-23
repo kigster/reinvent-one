@@ -2,6 +2,7 @@
 
 import { useState, useCallback, memo } from 'react'
 import { clients, type Client } from '@/data/clients'
+import { trackClick } from './SectionContext'
 
 const ClientCard = memo(function ClientCard ({
   client,
@@ -85,8 +86,14 @@ function ClientModal ({
 
 export default function Portfolio () {
   const [selected, setSelected] = useState<Client | null>(null)
-  const handleSelect = useCallback((client: Client) => setSelected(client), [])
-  const handleClose = useCallback(() => setSelected(null), [])
+  const handleSelect = useCallback((client: Client) => {
+    trackClick('client', client.name, 'open')
+    setSelected(client)
+  }, [])
+  const handleClose = useCallback(() => {
+    if (selected) trackClick('client', selected.name, 'close')
+    setSelected(null)
+  }, [selected])
 
   return (
     <section id='portfolio' className='relative py-24 bg-gray-200 text-gray-900'>

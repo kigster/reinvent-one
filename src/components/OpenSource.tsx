@@ -2,6 +2,7 @@
 
 import { useMemo, memo, useState } from "react";
 import type { RepoProject } from "@/lib/openSourceData";
+import { trackClick } from "./SectionContext";
 
 function projectNameColor(stars: number): string {
   if (stars > 500) return "text-orange-400";
@@ -151,6 +152,7 @@ const ProjectCard = memo(function ProjectCard({
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackClick("oss", project.name)}
           className={`font-heading text-xl font-semibold hover:underline transition-colors ${nameColor}`}
         >
           {project.name}

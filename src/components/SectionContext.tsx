@@ -9,6 +9,24 @@ import {
   useEffect,
 } from "react";
 
+declare global {
+  interface Window { gtag?: (...args: unknown[]) => void; }
+}
+
+export function sendGaEvent(name: string) {
+  window.gtag?.("event", name);
+}
+
+export function slugify(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+export type TrackAction = "open" | "close";
+
+export function trackClick(section: string, name: string, action: TrackAction = "open") {
+  sendGaEvent(`${section}.${action}.${slugify(name)}`);
+}
+
 export const SECTION_IDS = [
   "hero",
   "services",
@@ -57,6 +75,7 @@ export function SectionProvider({
       timerRef.current = null;
     }
 
+    trackClick("nav", id);
     setPhase("fading-out");
 
     timerRef.current = setTimeout(() => {

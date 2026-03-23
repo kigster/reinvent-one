@@ -125,30 +125,17 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-gray-100 rounded-lg p-6 flex items-center justify-center min-h-[300px]">
-            <div className="text-center text-gray-500">
-              <svg
-                className="w-12 h-12 mx-auto mb-3 text-gray-400"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                />
-              </svg>
-              <p className="font-semibold">San Francisco, CA</p>
-              <p className="text-sm">{company.address}</p>
-            </div>
+          <div className="rounded-lg overflow-hidden min-h-[300px]">
+            <iframe
+              title="ReinventONE Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.468!2d-122.4008!3d37.7522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3e5b1d1a1b%3A0x0!2s1113+Carolina+Street%2C+San+Francisco%2C+CA+94107!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: "300px" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </div>
       </div>

@@ -19,6 +19,12 @@ export default function RootLayout ({
 }) {
   return (
     <html>
+      <head>
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;600;700&family=Teko:wght@300;400;500;600;700&display=swap'
+        />
+      </head>
       <body className='bg-brand-dark text-white antialiased'>
         {children}
 

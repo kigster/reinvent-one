@@ -65,6 +65,9 @@ export function SectionProvider({
       setPhase("fading-in");
       window.scrollTo({ top: 0 });
 
+      // Update URL hash without triggering a scroll
+      history.replaceState(null, "", id === "hero" ? window.location.pathname : `#${id}`);
+
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           setPhase("idle");
@@ -72,6 +75,15 @@ export function SectionProvider({
         });
       });
     }, 500);
+  }, []);
+
+  // On mount, navigate to the section specified in the URL hash
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash && SECTION_IDS.includes(hash)) {
+      shownRef.current = hash;
+      setShownSection(hash);
+    }
   }, []);
 
   // Intercept all hash-link clicks so every #section link works

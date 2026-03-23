@@ -13,7 +13,7 @@ const ClientCard = memo(function ClientCard ({
   return (
     <button
       onClick={() => onSelect(client)}
-      className='group relative overflow-hidden rounded-lg aspect-4/3 w-full text-left card-shadow'
+      className='group relative overflow-hidden rounded-lg w-full max-w-[500px] h-[500px] text-left card-shadow'
     >
       <img
         src={client.image}
@@ -90,7 +90,7 @@ export default function Portfolio () {
 
   return (
     <section id='portfolio' className='relative py-24 bg-gray-200 text-gray-900'>
-      <div className='max-w-6xl mx-auto px-4 sm:px-6'>
+      <div className='mx-auto px-4 sm:px-6'>
         <div className='text-center mb-16'>
           <h2 className='font-heading text-5xl sm:text-6xl font-bold text-brand-dark mb-4'>
             Portfolio
@@ -101,7 +101,7 @@ export default function Portfolio () {
           </p>
         </div>
 
-        <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
+        <div className='flex flex-wrap justify-center gap-8 xl:gap-[50px]'>
           {clients.map(client => (
             <ClientCard
               key={client.short}

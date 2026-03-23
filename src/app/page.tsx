@@ -4,9 +4,12 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Portfolio from "@/components/Portfolio";
+import PublicSpeaking from "@/components/PublicSpeaking";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { getOpenSourceProjects } from "@/lib/openSourceData";
+import { SectionProvider } from "@/components/SectionContext";
+import SectionPanel from "@/components/SectionPanel";
 
 const OpenSource = dynamic(() => import("@/components/OpenSource"), {
   ssr: true,
@@ -23,17 +26,32 @@ const OpenSource = dynamic(() => import("@/components/OpenSource"), {
 export default function Home() {
   const projects = getOpenSourceProjects();
   return (
-    <>
+    <SectionProvider>
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <About />
-        <Portfolio />
-        <OpenSource projects={projects} />
-        <Contact />
+        <SectionPanel id="hero">
+          <Hero />
+        </SectionPanel>
+        <SectionPanel id="services">
+          <Services />
+        </SectionPanel>
+        <SectionPanel id="about">
+          <About />
+        </SectionPanel>
+        <SectionPanel id="portfolio">
+          <Portfolio />
+        </SectionPanel>
+        <SectionPanel id="speaking">
+          <PublicSpeaking />
+        </SectionPanel>
+        <SectionPanel id="open-source">
+          <OpenSource projects={projects} />
+        </SectionPanel>
+        <SectionPanel id="contact">
+          <Contact />
+        </SectionPanel>
       </main>
       <Footer />
-    </>
+    </SectionProvider>
   );
 }

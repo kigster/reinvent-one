@@ -1,8 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300;400;600;700&family=Teko:wght@300;400;500;600;700&display=swap");
+@theme {
+  --color-brand-dark: #1a1a2e;
+  --color-brand-darker: #16213e;
+  --color-brand-accent: #ff5000;
+  --color-brand-light: #f5f5f5;
+
+  --font-heading: "Teko", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+  --font-abel: "Abel", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -41,6 +48,16 @@ body {
   .diagonal-accent::before {
     @apply bg-brand-accent;
   }
+}
+
+/* Card shadow with hover expansion */
+.card-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.75);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
 /* Canvas background overlay */

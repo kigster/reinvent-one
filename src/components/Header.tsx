@@ -5,6 +5,7 @@ import { useSectionNav } from "./SectionContext";
 
 const navLinks = [
   { label: "Services", href: "#services" },
+  { label: "Schedule", href: "#schedule" },
   { label: "About", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Speaking", href: "#speaking" },

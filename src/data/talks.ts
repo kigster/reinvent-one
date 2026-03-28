@@ -15,6 +15,18 @@ export interface Talk {
 
 export const talks: Talk[] = [
   {
+    slug: '2015.from-obvious-to-ingenius--scaling-web-apps',
+    year: 2015,
+    title: 'From Obvious to Ingenious \u2014 Scaling Web Apps',
+    excerpt:
+      'Originally presented at SF PostgreSQL User Group, this 100+ slide deep dive covers incrementally scaling web applications on PostgreSQL, from caching strategies to sharding and beyond.',
+    pages: 107,
+    sizeBytes: 55_066_064,
+    cover:
+      '/images/talks/images/2015.from-obvious-to-ingenius--scaling-web-apps.jpg',
+    pdf: '/images/talks/pdfs/2015.from-obvious-to-ingenius--scaling-web-apps.pdf'
+  },
+  {
     slug: '2025.thread-safety-in-ruby-and-rails',
     year: 2025,
     title: 'Thread Safety in Ruby and Rails',
@@ -102,17 +114,5 @@ export const talks: Talk[] = [
     sizeBytes: 40_643_304,
     cover: '/images/talks/images/2018.be-friends-with-unix.jpg',
     pdf: '/images/talks/pdfs/2018.be-friends-with-unix.pdf'
-  },
-  {
-    slug: '2015.from-obvious-to-ingenius--scaling-web-apps',
-    year: 2015,
-    title: 'From Obvious to Ingenious \u2014 Scaling Web Apps',
-    excerpt:
-      'Originally presented at SF PostgreSQL User Group, this 100+ slide deep dive covers incrementally scaling web applications on PostgreSQL, from caching strategies to sharding and beyond.',
-    pages: 107,
-    sizeBytes: 55_066_064,
-    cover:
-      '/images/talks/images/2015.from-obvious-to-ingenius--scaling-web-apps.jpg',
-    pdf: '/images/talks/pdfs/2015.from-obvious-to-ingenius--scaling-web-apps.pdf'
   }
 ]

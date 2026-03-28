@@ -3,9 +3,24 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ReinventONE — Applied AI & AI-First Engineering',
+  title:
+    'ReinventONE — Applied AI & AI-First Engineering, ' +
+    'Scalable Infrastructure, DevOps, Cloud Cost Optimization',
   description:
-    'ReinventONE helps companies integrate AI into their products and workflows. AI strategy, LLM integration, AI-powered product development, and MLOps.',
+    'ReinventONE helps companies scale and integrate AI into their products and workflows. AI strategy, LLM integration, AI-powered product development, scalability, high-availability, fault-tolerance, infrastructure as code, DevOps, Cloud Cost optimization, PostgreSQL tuning, observability, and more.',
+  keywords: [
+    'AI strategy',
+    'LLM integration',
+    'AI-powered product development',
+    'Scalability',
+    'High-Availability',
+    'Fault-Tolerance',
+    'Infrastructure as Code',
+    'DevOps',
+    'Cloud Cost Optimization',
+    'PostgreSQL tuning',
+    'Observability'
+  ],
   icons: {
     icon: '/images/re1/favicon/favicon-32x32.png',
     apple: '/images/re1/favicon/apple-icon-180x180.png'

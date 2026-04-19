@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback, memo } from "react";
+import { useCallback, memo } from "react";
 import { talks, type Talk } from "@/data/talks";
-import { trackClick } from "./SectionContext";
+import { trackClick, useSectionNav } from "./SectionContext";
 import PdfViewer from "./PdfViewer";
 
 function formatSize(bytes: number): string {
@@ -52,15 +52,23 @@ const TalkCard = memo(function TalkCard({
 });
 
 export default function PublicSpeaking() {
-  const [selectedTalk, setSelectedTalk] = useState<Talk | null>(null);
-  const handleSelect = useCallback((talk: Talk) => {
-    trackClick("talks", talk.title, "open");
-    setSelectedTalk(talk);
-  }, []);
+  const { subPath, setSubPath } = useSectionNav();
+  // Selected talk is fully derived from URL sub-path so deep-links work and
+  // open/close stays in sync with the address bar.
+  const selectedTalk: Talk | null =
+    (subPath && talks.find((t) => t.slug === subPath)) || null;
+
+  const handleSelect = useCallback(
+    (talk: Talk) => {
+      trackClick("talks", talk.title, "open");
+      setSubPath(talk.slug);
+    },
+    [setSubPath]
+  );
   const handleClose = useCallback(() => {
     if (selectedTalk) trackClick("talks", selectedTalk.title, "close");
-    setSelectedTalk(null);
-  }, [selectedTalk]);
+    setSubPath(null);
+  }, [selectedTalk, setSubPath]);
 
   return (
     <section id="speaking" className="relative py-24 bg-gray-200 text-gray-900">

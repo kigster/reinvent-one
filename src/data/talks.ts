@@ -15,6 +15,17 @@ export interface Talk {
 
 export const talks: Talk[] = [
   {
+    slug: '2026.inquirex',
+    year: 2026,
+    title: 'Inquirex: Deterministic DSL meets Probabilistic LLM',
+    excerpt:
+      'Presented on April 14th, 2026 at SF Ruby User Group, this talk introduces a collection of gems that together define flexible DSL for building deterministic lead-qualification forms that are type-safe, supporting AST branching supported, TTY interface, HTML interface, and LLM acting as an extractor of answers from free-form text, shortening the process dramatically.',
+    pages: 33,
+    sizeBytes: 9_560_651,
+    cover: '/images/talks/images/2026.inquirex.jpg',
+    pdf: '/images/talks/pdfs/2026.inquirex.pdf'
+  },
+  {
     slug: '2015.from-obvious-to-ingenius--scaling-web-apps',
     year: 2015,
     title: 'From Obvious to Ingenious \u2014 Scaling Web Apps',
@@ -22,8 +33,7 @@ export const talks: Talk[] = [
       'Originally presented at SF PostgreSQL User Group, this 100+ slide deep dive covers incrementally scaling web applications on PostgreSQL, from caching strategies to sharding and beyond.',
     pages: 107,
     sizeBytes: 55_066_064,
-    cover:
-      '/images/talks/images/2015.from-obvious-to-ingenius--scaling-web-apps.jpg',
+    cover: '/images/talks/images/2015.from-obvious-to-ingenius--scaling-web-apps.jpg',
     pdf: '/images/talks/pdfs/2015.from-obvious-to-ingenius--scaling-web-apps.pdf'
   },
   {

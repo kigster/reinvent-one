@@ -163,11 +163,11 @@ const ProjectCard = memo(function ProjectCard({
               href={project.site}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 rounded text-gray-400 hover:text-brand-accent transition-colors"
+              className="inline-flex items-center justify-center p-1.5 rounded-full border border-transparent text-brand-accent hover:border-brand-accent transition-colors"
               title="External site"
               aria-label={`Open ${project.name} site`}
             >
-              <ExternalSiteIcon className="w-4 h-4" />
+              <ExternalSiteIcon className="w-6 h-6" />
             </a>
           )}
           <a

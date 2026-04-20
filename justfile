@@ -23,6 +23,12 @@ convert:
 
 clean:
     rm -rfv out
+    rm -rf .next
+    pkill -f "next dev" || true
+    pkill -f "next-server" || true
+
+wipe: clean
+    rm -rf node_modules
 
 deploy:
     @echo -e "Remote update:" 

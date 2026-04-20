@@ -1,26 +1,71 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSectionNav } from "./SectionContext";
 
-const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "About", href: "#about" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Speaking", href: "#speaking" },
-  { label: "Open Source", href: "#open-source" },
-  { label: "Contact", href: "#contact" },
+type OverflowLink = {
+  label: string;
+  href: string;
+  topCls: string;
+  dropCls: string;
+};
+
+type PermanentLink = {
+  label: string;
+  href: string;
+  external?: boolean;
+  sectionId?: string;
+};
+
+const overflowLinks: OverflowLink[] = [
+  { label: "Services", href: "#services", topCls: "hidden md:inline-block", dropCls: "md:hidden" },
+  { label: "Portfolio", href: "#portfolio", topCls: "hidden md:inline-block", dropCls: "md:hidden" },
+  { label: "Speaking", href: "#speaking", topCls: "hidden lg:inline-block", dropCls: "lg:hidden" },
+  { label: "Open Source", href: "#open-source", topCls: "hidden lg:inline-block", dropCls: "lg:hidden" },
+  { label: "Schedule", href: "#schedule", topCls: "hidden xl:inline-block", dropCls: "xl:hidden" },
+];
+
+const permanentLinks: PermanentLink[] = [
+  { label: "Founder", href: "#about", sectionId: "about" },
+  { label: "Contact", href: "#contact", sectionId: "contact" },
+  { label: "Blog", href: "#blog", external: true },
 ];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const { shownSection, navigateTo } = useSectionNav();
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!aboutOpen) return;
+    const onDocClick = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setAboutOpen(false);
+      }
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAboutOpen(false);
+    };
+    document.addEventListener("mousedown", onDocClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDocClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [aboutOpen]);
 
   const handleNav = (href: string) => {
     navigateTo(href.slice(1));
-    setMenuOpen(false);
+    setAboutOpen(false);
   };
+
+  const openBlog = () => {
+    window.open("https://kig.re/", "_blank", "noopener,noreferrer");
+    setAboutOpen(false);
+  };
+
+  const aboutActive = shownSection === "about";
+  const textStroke = { WebkitTextStroke: "0.4px currentColor" as const };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-brand-dark/90 backdrop-blur-sm border-b border-white/10">
@@ -41,9 +86,8 @@ export default function Header() {
             />
           </a>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => {
+          <nav className="flex items-center gap-4 sm:gap-6 md:gap-7 lg:gap-8">
+            {overflowLinks.map((link) => {
               const sectionId = link.href.slice(1);
               const isActive = shownSection === sectionId;
               return (
@@ -54,77 +98,113 @@ export default function Header() {
                     e.preventDefault();
                     handleNav(link.href);
                   }}
-                  className={`text-base font-abel uppercase tracking-wider transition-colors ${
-                    isActive
-                      ? "text-brand-accent"
-                      : "text-gray-300 hover:text-brand-accent"
+                  className={`${link.topCls} text-base font-abel uppercase tracking-wider transition-colors ${
+                    isActive ? "text-brand-accent" : "text-gray-300 hover:text-brand-accent"
                   }`}
-                  style={{ WebkitTextStroke: "0.4px currentColor" }}
+                  style={textStroke}
                 >
                   {link.label}
                 </a>
               );
             })}
-          </nav>
 
-          {/* Mobile menu button */}
-          <button
-            className="md:hidden text-gray-300 hover:text-white"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+            <div className="relative" ref={dropdownRef}>
+              <button
+                type="button"
+                onClick={() => setAboutOpen((o) => !o)}
+                aria-haspopup="true"
+                aria-expanded={aboutOpen}
+                className={`flex items-center gap-1 cursor-pointer text-base font-abel uppercase tracking-wider transition-colors ${
+                  aboutActive ? "text-brand-accent" : "text-gray-300 hover:text-brand-accent"
+                }`}
+                style={textStroke}
+              >
+                About
+                <svg
+                  className={`w-3 h-3 transition-transform ${aboutOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {aboutOpen && (
+                <div
+                  role="menu"
+                  className="absolute right-0 mt-2 min-w-[200px] bg-brand-dark border border-white/10 rounded shadow-xl py-2"
+                >
+                  {overflowLinks.map((link) => {
+                    const sectionId = link.href.slice(1);
+                    const isActive = shownSection === sectionId;
+                    return (
+                      <a
+                        key={`drop-${link.href}`}
+                        href={link.href}
+                        role="menuitem"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNav(link.href);
+                        }}
+                        className={`${link.dropCls} block px-4 py-2 text-sm font-abel uppercase tracking-wider transition-colors ${
+                          isActive
+                            ? "text-brand-accent"
+                            : "text-gray-300 hover:text-brand-accent hover:bg-white/5"
+                        }`}
+                        style={textStroke}
+                      >
+                        {link.label}
+                      </a>
+                    );
+                  })}
+
+                  <div className="xl:hidden border-t border-white/10 my-1" />
+
+                  {permanentLinks.map((link) => {
+                    if (link.external) {
+                      return (
+                        <a
+                          key={`drop-${link.label}`}
+                          href={link.href}
+                          role="menuitem"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            openBlog();
+                          }}
+                          className="block px-4 py-2 text-sm font-abel uppercase tracking-wider text-gray-300 hover:text-brand-accent hover:bg-white/5 transition-colors"
+                          style={textStroke}
+                        >
+                          {link.label}
+                        </a>
+                      );
+                    }
+                    const isActive = link.sectionId === shownSection;
+                    return (
+                      <a
+                        key={`drop-${link.label}`}
+                        href={link.href}
+                        role="menuitem"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleNav(link.href);
+                        }}
+                        className={`block px-4 py-2 text-sm font-abel uppercase tracking-wider transition-colors ${
+                          isActive
+                            ? "text-brand-accent"
+                            : "text-gray-300 hover:text-brand-accent hover:bg-white/5"
+                        }`}
+                        style={textStroke}
+                      >
+                        {link.label}
+                      </a>
+                    );
+                  })}
+                </div>
               )}
-            </svg>
-          </button>
-        </div>
-
-        {/* Mobile nav */}
-        {menuOpen && (
-          <nav className="md:hidden pb-4 border-t border-white/10 pt-4">
-            {navLinks.map((link) => {
-              const sectionId = link.href.slice(1);
-              const isActive = shownSection === sectionId;
-              return (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNav(link.href);
-                  }}
-                  className={`block py-2 text-sm font-abel uppercase tracking-wider transition-colors ${
-                    isActive
-                      ? "text-brand-accent"
-                      : "text-gray-300 hover:text-brand-accent"
-                  }`}
-                  style={{ WebkitTextStroke: "0.4px currentColor" }}
-                >
-                  {link.label}
-                </a>
-              );
-            })}
+            </div>
           </nav>
-        )}
+        </div>
       </div>
     </header>
   );

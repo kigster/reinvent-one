@@ -17,10 +17,19 @@ const TalkCard = memo(function TalkCard({
   talk: Talk;
   onSelect: (talk: Talk) => void;
 }) {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onSelect(talk);
+    }
+  };
   return (
-    <button
+    <div
+      role="button"
+      tabIndex={0}
       onClick={() => onSelect(talk)}
-      className="group flex flex-col text-left rounded-xl overflow-hidden border border-gray-200 hover:border-brand-accent/50 transition-all duration-300 bg-white card-shadow w-full max-w-[500px] h-[500px]"
+      onKeyDown={handleKeyDown}
+      className="group flex flex-col text-left rounded-xl overflow-hidden border border-gray-200 hover:border-brand-accent/50 transition-all duration-300 bg-white card-shadow w-full max-w-[500px] h-[500px] cursor-pointer focus:outline-none focus:ring-2 focus:ring-brand-accent"
     >
       {/* Cover image */}
       <div className="relative w-full flex-1 min-h-0 overflow-hidden">
@@ -44,10 +53,23 @@ const TalkCard = memo(function TalkCard({
         {/* Status line */}
         <div className="flex items-center justify-between text-sm text-gray-400 pt-3 border-t border-gray-100">
           <span>{talk.pages} pages</span>
-          <span>{formatSize(talk.sizeBytes)} PDF</span>
+          <span className="flex items-center gap-3">
+            <span>{formatSize(talk.sizeBytes)} PDF</span>
+            <a
+              href={talk.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-transparent text-gray-400 hover:text-brand-accent hover:border-brand-accent transition-colors"
+              aria-label="Download PDF"
+              title="Download PDF"
+            >
+              <i className="fa-solid fa-download text-[1.05rem]" aria-hidden="true" />
+            </a>
+          </span>
         </div>
       </div>
-    </button>
+    </div>
   );
 });
 

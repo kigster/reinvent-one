@@ -217,13 +217,26 @@ export default function PdfViewer({ talk, onClose }: Props) {
               {currentPage}/{totalPages}
             </span>
           </div>
-          <button
-            onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-900 transition-colors text-lg font-bold shrink-0 ml-2"
-            aria-label="Close"
-          >
-            &times;
-          </button>
+          <div className="flex items-center gap-2 shrink-0 ml-2">
+            <a
+              href={talk.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-900 transition-colors"
+              aria-label="Download PDF"
+              title="Download PDF"
+            >
+              <i className="fa-solid fa-download text-sm" aria-hidden="true" />
+            </a>
+            <button
+              onClick={onClose}
+              className="w-8 h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 text-gray-600 hover:text-gray-900 transition-colors text-lg font-bold"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
         </div>
 
         {/* PDF Content */}

@@ -195,7 +195,7 @@ export default function Hero() {
             Our Services
           </a>
           <a
-            href="#contact"
+            href="#schedule"
             className="inline-block px-8 py-3 border border-white/30 text-white font-semibold rounded hover:bg-white/10 transition-colors"
           >
             Get in Touch
